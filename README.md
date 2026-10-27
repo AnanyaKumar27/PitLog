@@ -4,6 +4,8 @@
 
 ![PitLog garage dashboard demo](public/pitlog-demo.png)
 
+[Watch the PitLog demo video](https://drive.google.com/file/d/1YFyCMOXIHIBllDcU7FqI5J_J6n0W6YS2/view?usp=sharing)
+
 ## Problem statement
 
 Student racing and karting drivers often keep faults, maintenance, setup changes, and test observations in scattered notebooks or chats. That makes it hard to connect a repair or setup decision with what the car did on track.
