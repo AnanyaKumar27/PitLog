@@ -1,0 +1,38 @@
+:root {
+  font-family: 'Lora', Georgia, serif;
+  color: #f3e8ed;
+  background: #202327;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  --bg: #202327;
+  --panel: #292d32;
+  --panel-raised: #343940;
+  --line: #444a52;
+  --muted: #bea8b2;
+  --text: #f3e8ed;
+  --lime: #e17f9d;
+  --teal: #0d716e;
+  --mauve: #925a74;
+  --rose: #e17f9d;
+  --pale-pink: #dcc5d0;
+  --mono: 'DM Mono', monospace;
+  --display: 'Lora', Georgia, serif;
+  --script: 'Caveat', cursive;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--bg);
+}
+button, input, select, textarea { font: inherit; }
+button { color: inherit; }
+a { color: inherit; text-decoration: none; }
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 2px solid var(--rose); outline-offset: 3px; }
+::selection { color: #202327; background: var(--pale-pink); }
