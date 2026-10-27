@@ -1,5 +1,9 @@
 # PitLog — Motorsport Engineering Logbook
 
+## Demo
+
+![PitLog sign-in page demo](public/pitlog-demo.png)
+
 ## Problem statement
 
 Student racing and karting drivers often keep faults, maintenance, setup changes, and test observations in scattered notebooks or chats. That makes it hard to connect a repair or setup decision with what the car did on track.
