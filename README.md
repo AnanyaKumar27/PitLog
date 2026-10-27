@@ -109,6 +109,20 @@ npm run dev:full
 
 Open `http://localhost:5173` and create an account. Vite proxies `/api` requests to Express on port `3001`. The API connects to Atlas at startup; connection or IP/DNS errors appear in the terminal. Do not put database credentials in frontend variables.
 
+## Deploy to Vercel and Render
+
+Deploy the Vite frontend to Vercel and the Express API to Render as separate services. Configure these environment variables:
+
+| Service | Variable | Value |
+|---|---|---|
+| Vercel | `VITE_API_BASE_URL` | The Render API origin, such as `https://your-service.onrender.com` (no trailing slash or `/api`) |
+| Render | `MONGODB_URI` | Your Atlas connection string |
+| Render | `MONGODB_DB` | `pitlog` |
+| Render | `JWT_SECRET` | A strong, private random secret of at least 32 characters |
+| Render | `CLIENT_URL` | The exact deployed Vercel origin, such as `https://your-project.vercel.app` |
+
+Set the Vercel variable for the Production environment and redeploy so it is included in the frontend build. The Render API service should use `npm install` as its build command and `npm run server` as its start command. Confirm `https://your-service.onrender.com/api/health` returns `{"status":"ok"}`. Do not set Atlas credentials or `JWT_SECRET` in Vercel or in any `VITE_` variable.
+
 ## API routes
 
 - `POST /api/auth/signup`, `POST /api/auth/login`, `GET /api/auth/me`

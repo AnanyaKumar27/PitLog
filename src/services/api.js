@@ -1,4 +1,5 @@
-const API_BASE = '/api'
+const API_ORIGIN = import.meta.env.VITE_API_BASE_URL?.trim().replace(/\/+$/, '')
+const API_BASE = `${API_ORIGIN || ''}/api`
 
 export async function apiRequest(path, { token, ...options } = {}) {
   const headers = new Headers(options.headers || {})
