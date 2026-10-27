@@ -2,7 +2,7 @@
 
 ## Demo
 
-![PitLog sign-in page demo](public/pitlog-demo.png)
+![PitLog garage dashboard demo](public/pitlog-demo.png)
 
 ## Problem statement
 
